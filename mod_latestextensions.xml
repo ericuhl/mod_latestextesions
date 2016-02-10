@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	version="3.0"
+	type="module"
+	group="content"
+	method="upgrade"
+	client="administrator">
+	<name>Latest Extensions</name>
+	<creationDate>February 10 2016</creationDate>
+	<author>Eric Uhl</author>
+	<authorEmail>eric.uhl@gmail.com</authorEmail>
+	<authorUrl>www.ericuhl.com</authorUrl>
+	<copyright>Eric Uhl © 2016 All Rights Reserved</copyright>
+	<license>http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<version>1.0.0</version>
+	<description>This module will show the most recent installations of extensions to the site.
+	</description>
+	<files>
+		<filename module="mod_latestextensions">mod_latestextensions.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<folder>tmpl</folder>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="count" type="text" default="5" label="Count" description="The number of items to display (Default is 5)" />
+			</fieldset>
+			<fieldset name="advanced">
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC"
+				/>
+			</fieldset>
+		</fields>
+	</config>
+</extension> 
