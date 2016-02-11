@@ -12,7 +12,7 @@
 	<authorUrl>www.ericuhl.com</authorUrl>
 	<copyright>Eric Uhl © 2016 All Rights Reserved</copyright>
 	<license>http://www.gnu.org/licenses/gpl-3.0.html</license>
-	<version>1.0.0</version>
+	<version>1.3.0</version>
 	<description>This module will show the most recent installations of extensions to the site.
 	</description>
 	<files>
@@ -21,10 +21,18 @@
 		<filename>index.html</filename>
 		<folder>tmpl</folder>
 	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.mod_latestextensions.ini</language>
+	</languages>
 	<config>
 		<fields name="params">
 			<fieldset name="basic">
-				<field name="count" type="text" default="5" label="Count" description="The number of items to display (Default is 5)" />
+				<field 
+					name="count" 
+					type="text" 
+					default="5" 
+					label="MOD_LATESTEXTENSIONS_FIELD_COUNT_LABEL" 
+					description="MOD_LATESTEXTENSIONS_FIELD__COUNT_DESC" />
 			</fieldset>
 			<fieldset name="advanced">
 				<field

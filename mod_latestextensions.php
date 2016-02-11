@@ -14,6 +14,6 @@ require_once __DIR__ . '/helper.php';
 //Load data from helper.php and put it in an array
 $list = mod_latestextensionsHelper::getList($params);
 //Load the params onto module class sfx for use in view
-$modclass_sfx = htmlspecialchars($params->get('moduleclass_sfx'));
+$moduleclass_sfx = htmlspecialchars($params->get('moduleclass_sfx'));
 //Load the default layou for view
 require JModuleHelper::getLayoutPath('mod_latestextensions',$params->get('layout', 'default'));

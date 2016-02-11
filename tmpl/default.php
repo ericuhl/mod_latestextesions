@@ -9,8 +9,8 @@
 
 //Restrict Access to this file
 defined('_JEXEC') or die;
-
 ?>
+
 <div class="latestextensions<?php echo $moduleclass_sfx ?>">
 	<div class="row-striped">
 		<?php foreach ($list as $item) : ?>
