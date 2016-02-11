@@ -12,7 +12,7 @@
 	<authorUrl>www.ericuhl.com</authorUrl>
 	<copyright>Eric Uhl © 2016 All Rights Reserved</copyright>
 	<license>http://www.gnu.org/licenses/gpl-3.0.html</license>
-	<version>1.3.0</version>
+	<version>1.5.0</version>
 	<description>This module will show the most recent installations of extensions to the site.
 	</description>
 	<files>
@@ -24,6 +24,7 @@
 	<languages>
 		<language tag="en-GB">language/en-GB/en-GB.mod_latestextensions.ini</language>
 	</languages>
+	<help url="HELP_EXTENSIONS_MODULE_LATESTEXTENSIONS_URL" />
 	<config>
 		<fields name="params">
 			<fieldset name="basic">
@@ -35,6 +36,12 @@
 					description="MOD_LATESTEXTENSIONS_FIELD__COUNT_DESC" />
 			</fieldset>
 			<fieldset name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC"
+				/>
 				<field
 					name="moduleclass_sfx"
 					type="text"
